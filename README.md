@@ -2,9 +2,19 @@
 
 A full-stack TypeScript monorepo containing the **API** and **Dashboard** for AIO Tracker, managed with npm workspaces.
 
+## Table of Contents
+ 
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Development](#development)
+- [Build](#build)
+- [API Routes](#api-routes)
+- [Apps](#apps)
+- [Tech Stack](#tech-stack)
+
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 geo-project/
@@ -17,7 +27,7 @@ geo-project/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -61,7 +71,7 @@ VITE_API_URL=http://localhost:4000/analyze
 
 ---
 
-## 🧑‍💻 Development
+## Development
 
 Run both apps concurrently from the root:
 
@@ -86,7 +96,7 @@ npm run dev -w apps/aio-tracker-dashboard
 
 ---
 
-## 🏗️ Build
+## Build
 
 ```bash
 # Build all apps
@@ -99,7 +109,26 @@ npm run build -w apps/aio-tracker-dashboard
 
 ---
 
-## 📦 Apps
+## API Routes
+ 
+All routes are prefixed with the base API URL (e.g. `http://localhost:4000`).
+ 
+| Method | Endpoint          | Description                        |
+|--------|-------------------|------------------------------------|
+| POST   | `/`               | Run a new AIO analysis             |
+| GET    | `/`               | Get all analyses                   |
+| GET    | `/search`         | Search analyses                    |
+| GET    | `/trends`         | Get analysis trends                |
+| POST   | `/upload`         | Upload a CSV of prompts to analyze |
+| GET    | `/countMention`   | Get brand mention counts           |
+| POST   | `/generatePrompt` | Generate Google prompts            |
+| GET    | `/topMention`     | Get top mentioned brands           |
+| GET    | `/summary`        | Get analysis summary               |
+| GET    | `/brands`         | Get all brands                     |
+ 
+---
+
+## Apps
 
 ### `apps/aio-tracker-api`
 
@@ -115,7 +144,7 @@ npm run build -w apps/aio-tracker-dashboard
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer     | Technology                     |
 |-----------|-------------------------------|
