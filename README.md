@@ -43,7 +43,7 @@ Create a `.env` file inside `apps/aio-tracker-api/`:
 ```env
 PORT=4000
 NODE_DEV=development
-MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net
+MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/<database_name>
 DB_NAME=your_database_name
 SERPAPI_KEY=your_serpapi_key
 PLAYWRIGHT_HEADLESS=true
