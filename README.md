@@ -4,13 +4,15 @@ A full-stack TypeScript monorepo containing the **API** and **Dashboard** for AI
 
 ## Table of Contents
  
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Development](#development)
-- [Build](#build)
-- [API Routes](#api-routes)
-- [Apps](#apps)
-- [Tech Stack](#tech-stack)
+| Section | Description |
+|---|---|
+| [Project Structure](#project-structure) | Folder layout of the monorepo |
+| [Getting Started](#getting-started) | Prerequisites, install & env setup |
+| [Development](#development) | Run apps locally |
+| [Build](#build) | Build for production |
+| [API Routes](#api-routes) | All available endpoints |
+| [Apps](#apps) | Overview of each app |
+| [Tech Stack](#tech-stack) | Technologies used |
 
 ---
 
