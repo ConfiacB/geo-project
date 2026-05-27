@@ -123,8 +123,8 @@ All routes are prefixed with the base API URL (e.g. `http://localhost:4000`).
 | GET    | `/trends`         | Get analysis trends                |
 | POST   | `/upload`         | Upload a CSV of prompts to analyze |
 | GET    | `/countMention`   | Get brand mention counts           |
-| POST   | `/generatePrompt` | Generate Google prompts            |
-| GET    | `/topMention`     | Get top mentioned brands           |
+| POST   | `/generatePrompt` | Generate Gemini prompt             |
+| GET    | `/topMention`     | Get top mention for a brand        |
 | GET    | `/summary`        | Get analysis summary               |
 | GET    | `/brands`         | Get all brands                     |
  
